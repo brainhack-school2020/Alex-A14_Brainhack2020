@@ -8,7 +8,8 @@ Team contributors: Alex(ander) Albury
 
 ## Summary 
 
-Each project repository should have a markdown file explaining the background and objectives of the project, as well as a summary of the results, and links to the different deliverables of the project. Project reports are incorporated in the BrainHack School (BHS) [website](https://school.brainhackmtl.org/project). Note that the project summary also involves a number of key words. Those are listed on top of the [GitHub repository](https://github.com/brainhack-school2020/project_template), click `manage topics`.
+This repo contains the working project for Brainhack 2020
+
 
 ## Project definition 
 
@@ -18,14 +19,14 @@ Inspired by the [Recurse Centre](https://www.recurse.com/) initiative (formally 
 
 ### Tools 
 
-The "project template" project will rely on the following technologies: 
- * [Markdown](https://guides.github.com/features/mastering-markdown/), to structure the text.
- * The [Hugo website framework](https://gohugo.io) which is used by the BHS website. This makes it possible to easily add the markdown project description to the website. 
+The project will rely on the following technologies: 
+ * This README is built in [Markdown](https://guides.github.com/features/mastering-markdown/), to structure the text.
+ * The main summary and results of the project will live in a [Jupyter Notebook](https://jupyter.org/index.html) 
  * Adding the project to the website relies on github, through pull requests. 
 
 ### Data 
 
-Ultimately, the project template will be used by all BHS participants. Data on the different projects will be aggregareted on the [following page](https://school.brainhackmtl.org/project). This will serve as an additional example gallery in the years to come for future brainhack school students. Many reports from [BHS 2019](https://github.com/mtl-brainhack-school-2019) already used this template. 
+OpenNeuro
 
 ### Deliverables
 

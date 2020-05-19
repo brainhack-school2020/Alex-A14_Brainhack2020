@@ -1,8 +1,8 @@
 [![](https://img.shields.io/badge/Visit-our%20project%20page-ff69b4)](https://school.brainhackmtl.org/project/template)
 
-# A template for project reports at BrainHack School
+# BrainHack 2020 fMRI/EEG/Machine Learning/Data Viz Project???
 
-Team contributors: Brainhack School
+Team contributors: Alex(ander) Albury
 
 ![BrainHack School](bhs2020.png)
 

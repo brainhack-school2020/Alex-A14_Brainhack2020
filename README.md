@@ -49,7 +49,7 @@ The project is dependent on the available data. Currently in the process of find
  
 ### Results
 
-[![](https://webstockreview.net/images/coming-soon-png-images-6.png)
+![](https://webstockreview.net/images/coming-soon-png-images-6.png)
 
 #### Deliverable 1: report template
 

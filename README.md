@@ -9,12 +9,19 @@ Team contributors: Alex(ander) Albury
 ## Summary 
 
 This repo contains the working project for Brainhack 2020
+I'm a Psychology student researching music cognition. I'm also interested in language science.
 
 ## Project definition 
 
 ### Background
 
 This project will apply machine learning to predict, something.
+
+Currently considering working on a combined fMRI-EEG dataset that includes affective responses to music and measures of music preference.
+
+Depending on the structure of the data, it might be interesting to try and predict preferences to music genre based on brain activity. While the data includes both fMRI and EEG, I might stick to just the fMRI data to be realistic.
+
+I'm hoping to get some basic experience with processing/cleaning fMRI data but don't want to fight with it too much. I'd really like to experiment with different machine learning methods (algorithms, corss-validation methods, hyperparamters) and see how they compare. If the data is in the format I expect, it will be regression. (However, the rating scale of music preferences only goes to about 7 I beleive, so I suppose classification is also an option).
 
 ### Tools 
 
@@ -26,7 +33,12 @@ The project will rely on the following technologies:
 
 ### Data 
 
-Data will be obtaned from OpenNeuro.
+Data will be obtained from OpenNeuro.
+
+The data I'm currently considering can be found here:
+https://openneuro.org/datasets/ds002725/versions/1.0.0
+
+It includes fMRI and EEG data for 21 subjects.
 
 ### Deliverables
 
@@ -44,7 +56,7 @@ The project is dependent on the available data. Currently in the process of find
 ### Tools I'll learn during this project
 
  * **fMRI Data Processing**
- * **ML Scikit Learn**
+ * **ML with Scikit Learn**
  * **Pandas Data Manipulation**
  
 ### Results

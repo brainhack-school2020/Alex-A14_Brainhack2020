@@ -10,7 +10,7 @@ Team contributors: Alex(ander) Albury
 
 This repo contains the working project for Brainhack 2020
 
-I'm a Psychology student researching music cognition. I'm also interested in language science.
+I'm a Psychology student at Concordia researching music cognition. I'm also interested in language science.
 
 ## Project definition 
 
@@ -23,6 +23,8 @@ Currently considering working on a combined fMRI-EEG dataset that includes affec
 Depending on the structure of the data, it might be interesting to try and predict preferences to music genre based on brain activity. While the data includes both fMRI and EEG, I might stick to just the fMRI data to be realistic.
 
 I'm hoping to get some basic experience with processing/cleaning fMRI data but don't want to fight with it too much. I'd really like to experiment with different machine learning methods (algorithms, corss-validation methods, hyperparamters) and see how they compare. If the data is in the format I expect, it will be regression. (However, the rating scale of music preferences only goes to about 7 I beleive, so I suppose classification is also an option).
+
+What I do will ultimately depend on the amount of time spent preprocessing the fMRI data. If time allows, I can compare algorithm performance across various regions of interest.
 
 ### Tools 
 
@@ -52,7 +54,7 @@ At the end of this project, we will have:
 
 ### Progress overview
 
-The project is dependent on the available data. Currently in the process of finding publivly available data.
+The project is dependent on the available data. Currently in the process of finding publicly available data.
 
 ### Tools I'll learn during this project
 

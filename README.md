@@ -9,6 +9,7 @@ Team contributors: Alex(ander) Albury
 ## Summary 
 
 This repo contains the working project for Brainhack 2020
+
 I'm a Psychology student researching music cognition. I'm also interested in language science.
 
 ## Project definition 
@@ -58,6 +59,8 @@ The project is dependent on the available data. Currently in the process of find
  * **fMRI Data Processing**
  * **ML with Scikit Learn**
  * **Pandas Data Manipulation**
+ * **fMRI Data Visualization**
+ * **Visualizing Machine Learning Metrics**
  
 ### Results
 

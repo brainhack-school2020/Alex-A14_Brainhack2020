@@ -16,15 +16,13 @@ I'm a Psychology student at Concordia researching music cognition. I'm also inte
 
 ### Background
 
-This project will apply machine learning to predict, something.
+This project will apply machine learning to predict music preferences and/or affective response to music.
 
-Currently considering working on a combined fMRI-EEG dataset that includes affective responses to music and measures of music preference.
+Data will come from a combined EEG-fMRI task in which participants listened to music and continuously rated their feeling towards it. The study also included a behavioural survey of participant's preference for music genres. The published paper can be found [here](https://doi.org/10.1038/s41598-019-45105-2). Depending on the structure of the data, it might be interesting to try and predict preferences to music genre based on brain activity. While the data includes both fMRI and EEG, this project will focus on the fMRI data.
 
-Depending on the structure of the data, it might be interesting to try and predict preferences to music genre based on brain activity. While the data includes both fMRI and EEG, I might stick to just the fMRI data to be realistic.
+My goal for this project is to gain basic experience with processing/cleaning fMRI data. Following this, I'd like to experiment with different machine learning methods (algorithms, corss-validation methods, hyperparamters) and see how they compare. If the data is in the format I expect, it will be regression. (However, the rating scale of music preferences only goes to about 7 I beleive, so I suppose classification is also an option).
 
-I'm hoping to get some basic experience with processing/cleaning fMRI data but don't want to fight with it too much. I'd really like to experiment with different machine learning methods (algorithms, corss-validation methods, hyperparamters) and see how they compare. If the data is in the format I expect, it will be regression. (However, the rating scale of music preferences only goes to about 7 I beleive, so I suppose classification is also an option).
-
-What I do will ultimately depend on the amount of time spent preprocessing the fMRI data. If time allows, I can compare algorithm performance across various regions of interest.
+The scope of the project will ultimately depend on the amount of time spent preprocessing the fMRI data. If time allows, I can also compare algorithm performance across various regions of interest.
 
 ### Tools 
 
@@ -46,19 +44,19 @@ It includes fMRI and EEG data for 21 subjects.
 ### Deliverables
 
 At the end of this project, we will have:
- - The current markdown document, completed and revised.
- - A gallery of the student projects at Brainhack 2020.
- - Instructions on the website about how to submit a pull request to the [BrainHack School website](https://github.com/BrainhackMTL/school) in order to add the project description to the website. 
+ - A complete README summarizing the entire project and it results.
+ - A Jupyter notebook that contains all of the relevant code for project, properly formatted and commented.
+ - A markdown formatted .md or .html document that contains code, descriptions, and visualizations from the project.
 
 ## Results 
 
 ### Progress overview
 
-The project is dependent on the available data. Currently in the process of finding publicly available data.
+The project is dependent on the available data. Next steps are to do some preliminary analysis of the data and confirm that the behavioural measures are available.
 
 ### Tools I'll learn during this project
 
- * **fMRI Data Processing**
+ * **fMRI Data Processing with nilearn**
  * **ML with Scikit Learn**
  * **Pandas Data Manipulation**
  * **fMRI Data Visualization**
@@ -68,15 +66,7 @@ The project is dependent on the available data. Currently in the process of find
 
 ![](https://webstockreview.net/images/coming-soon-png-images-6.png)
 
-#### Deliverable 1: report template
-
-
-#### Deliverable 2: project gallery
-
-
-#### Deliverable 3: Instructions 
  
-
  
  
 ## Conclusion and acknowledgement

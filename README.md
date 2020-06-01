@@ -18,7 +18,7 @@ I'm a Psychology student at Concordia researching music cognition. I'm also inte
 
 This project will apply machine learning to predict schizophrenia diagnosis using fMRI data.
 
-The data used is a resting state fMRI dataset of schizophrenia patients and healthy controls. The data comes from [The Center for Biomedical Research Excellence (COBRE)](http://fcon_1000.projects.nitrc.org/indi/retro/cobre.html). Preprocessed data is publicly available on Nilearn and can be downloaded using `nilearn.datasets.fetch_cobre()` Documentation about the Nilearn data can be found [here](https://nilearn.github.io/modules/generated/nilearn.datasets.fetch_cobre.html#nilearn.datasets.fetch_cobre)
+The data used is a resting state fMRI dataset of schizophrenia patients and healthy controls. The data comes from [The Center for Biomedical Research Excellence (COBRE)](http://fcon_1000.projects.nitrc.org/indi/retro/cobre.html).
 
 This project aims to predict schizophrenia diagnosis using resting state data. Machine learning techniques will be used to classify schizophrenia patients from controls. The COBRE data set also includes subtypes of schizophrenia and so this project will predict diagnosis amonng schizophrenia patients. My goal for this project is to gain basic experience with processing/cleaning fMRI data. Following this, I'd like to experiment with different machine learning methods (algorithms, corss-validation methods, hyperparamters) and see how they compare.
 
@@ -34,12 +34,7 @@ The project will rely on the following technologies:
 
 ### Data 
 
-Data will be obtained from OpenNeuro.
-
-The data I'm currently considering can be found here:
-https://openneuro.org/datasets/ds002725/versions/1.0.0
-
-It includes fMRI and EEG data for 21 subjects.
+The preprocessed data is publicly available on Nilearn and can be downloaded using `nilearn.datasets.fetch_cobre()` Documentation about the Nilearn data can be found [here](https://nilearn.github.io/modules/generated/nilearn.datasets.fetch_cobre.html#nilearn.datasets.fetch_cobre)
 
 ### Deliverables
 

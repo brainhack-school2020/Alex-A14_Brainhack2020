@@ -1,6 +1,6 @@
 [![](https://img.shields.io/badge/Visit-our%20project%20page-ff69b4)](https://school.brainhackmtl.org/project/template)
 
-# BrainHack 2020 fMRI/EEG/Machine Learning/Data Viz Project???
+# Predicting Schizophrenia Diagnosis from Resting State fMRI
 
 Team contributors: Alex(ander) Albury
 
@@ -16,13 +16,13 @@ I'm a Psychology student at Concordia researching music cognition. I'm also inte
 
 ### Background
 
-This project will apply machine learning to predict music preferences and/or affective response to music.
+This project will apply machine learning to predict schizophrenia diagnosis using fMRI data.
 
-Data will come from a combined EEG-fMRI task in which participants listened to music and continuously rated their feeling towards it. The study also included a behavioural survey of participant's preference for music genres. The published paper can be found [here](https://doi.org/10.1038/s41598-019-45105-2). Depending on the structure of the data, it might be interesting to try and predict preferences to music genre based on brain activity. While the data includes both fMRI and EEG, this project will focus on the fMRI data.
+The data used is a resting state fMRI dataset of schizophrenia patients and healthy controls. The data comes from [The Center for Biomedical Research Excellence (COBRE)](http://fcon_1000.projects.nitrc.org/indi/retro/cobre.html). Preprocessed data is publicly available on Nilearn and can be downloaded using `nilearn.datasets.fetch_cobre()` Documentation about the Nilearn data can be found [here](https://nilearn.github.io/modules/generated/nilearn.datasets.fetch_cobre.html#nilearn.datasets.fetch_cobre)
 
-My goal for this project is to gain basic experience with processing/cleaning fMRI data. Following this, I'd like to experiment with different machine learning methods (algorithms, corss-validation methods, hyperparamters) and see how they compare. If the data is in the format I expect, it will be regression. (However, the rating scale of music preferences only goes to about 7 I beleive, so I suppose classification is also an option).
+This project aims to predict schizophrenia diagnosis using resting state data. Machine learning techniques will be used to classify schizophrenia patients from controls. The COBRE data set also includes subtypes of schizophrenia and so this project will predict diagnosis amonng schizophrenia patients. My goal for this project is to gain basic experience with processing/cleaning fMRI data. Following this, I'd like to experiment with different machine learning methods (algorithms, corss-validation methods, hyperparamters) and see how they compare.
 
-The scope of the project will ultimately depend on the amount of time spent preprocessing the fMRI data. If time allows, I can also compare algorithm performance across various regions of interest.
+
 
 ### Tools 
 
@@ -52,7 +52,7 @@ At the end of this project, we will have:
 
 ### Progress overview
 
-The project is dependent on the available data. Next steps are to do some preliminary analysis of the data and confirm that the behavioural measures are available.
+Currently the project includes a pipeline processing the demographic data and ensureing it's properly matched to the fmri files. There are also some visualiations of average brain activity for patients and controls.
 
 ### Tools I'll learn during this project
 

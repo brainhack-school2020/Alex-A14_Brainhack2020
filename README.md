@@ -40,6 +40,7 @@ The preprocessed data is publicly available on Nilearn and can be downloaded usi
 
 At the end of this project, we will have:
  - A complete README summarizing the entire project and it results.
+ - Week 3 Deliverable: Data Visualization [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/brainhack-school2020/Alex-A14_Brainhack2020/master?urlpath=https%3A%2F%2Fgithub.com%2Fbrainhack-school2020%2FAlex-A14_Brainhack2020%2Fblob%2Fmaster%2Fvisualization.ipynb)
  - A Jupyter notebook that contains all of the relevant code for project, properly formatted and commented.
  - A markdown formatted .md or .html document that contains code, descriptions, and visualizations from the project.
 

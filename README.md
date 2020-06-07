@@ -40,7 +40,9 @@ The preprocessed data is publicly available on Nilearn and can be downloaded usi
 
 At the end of this project, we will have:
  - A complete README summarizing the entire project and it results.
- - Week 3 Deliverable: Data Visualization [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/brainhack-school2020/Alex-A14_Brainhack2020/master?filepath=visualization.ipynb)
+ - Week 3 Deliverable: 
+     - [Plotly Histogram](http://htmlpreview.github.io/?https://github.com/brainhack-school2020/Alex-A14_Brainhack2020/blob/master/plotly.html)
+     - Binder With ipywidgets Correlation Matrices (**Currently Debugging**) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/brainhack-school2020/Alex-A14_Brainhack2020/master?filepath=visualization.ipynb)
  - A Jupyter notebook that contains all of the relevant code for project, properly formatted and commented.
  - A markdown formatted .md or .html document that contains code, descriptions, and visualizations from the project.
 
@@ -50,10 +52,11 @@ At the end of this project, we will have:
 
 Currently the project includes a pipeline processing the demographic data and ensureing it's properly matched to the fmri files. There are also some visualiations of average brain activity for patients and controls.
 
-### Tools I'll learn during this project
+### Tools I learned in this project:
 
  * **fMRI Data Processing with nilearn**
- * **ML with Scikit Learn**
+ * **Machine Learning with Scikit Learn**
+ * **Interactive plotting with Plotly**
  * **Pandas Data Manipulation**
  * **fMRI Data Visualization**
  * **Visualizing Machine Learning Metrics**
@@ -65,6 +68,6 @@ Currently the project includes a pipeline processing the demographic data and en
  
  
  
-## Conclusion and acknowledgement
+## Conclusion and Acknowledgements
 
 TBD

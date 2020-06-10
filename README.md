@@ -39,12 +39,12 @@ The preprocessed data is publicly available on Nilearn and can be downloaded usi
 
 ### Deliverables
 
-At the end of this project, we will have:
- - A complete README summarizing the entire project and it results.
+Products of this project include:
+ - A complete README summarizing the entire project and its results.
  - Week 3 Deliverable: 
      - [Plotly Histogram](http://htmlpreview.github.io/?https://github.com/brainhack-school2020/Alex-A14_Brainhack2020/blob/master/plotly.html)
      - Binder With ipywidgets Correlation Matrices (**Currently Debugging**) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/brainhack-school2020/Alex-A14_Brainhack2020/master?filepath=visualization.ipynb)
- - A Jupyter notebook that contains all of the relevant code for project, properly formatted and commented.
+ - A [Jupyter notebook](https://github.com/brainhack-school2020/Alex-A14_Brainhack2020/blob/master/analysis.ipynb) that contains all of the relevant code for the project, clearly formatted and commented.
  - A markdown formatted .md or .html document that contains code, descriptions, and visualizations from the project.
 
 ## Results 
@@ -53,9 +53,9 @@ At the end of this project, we will have:
 
 The project involved importing and cleaning the demographic data and nifiti files. After this, time series and correlation matrices were generated for each subject. Visualizations of subject demogrpahics and connectivity matrices of patients and controls were generated. Finally, various machine learning models were trained to predict schizophrenia diagnosis and were evaluated using 10-fold cross validation. The performance of the best performing model was then evaluated using a validation set.
 
-### Tools I learned in this project:
+### Tools learned in this project:
 
- * **fMRI Data Processing with nilearn**
+ * **fMRI Data Processing with Nilearn**
  * **Machine Learning with Scikit Learn**
  * **Interactive plotting with Plotly Express**
  * **Pandas Data Manipulation**
@@ -80,20 +80,28 @@ The primary goal of the project was to predict schizophrenia diagnosis. Several 
 
 The table below displays the average performance of each model across the 10-folds.
 
-| Classifier    | Average Fold F1 | Min  | Max  |
-| ------------- | --------------- | ---- | ---- |
-| Linear SVC    | 0.80            | 0.63 | 1.0  |
-| Gradient Boost| 0.58            | 0.24 | 0.83 |
-| KNN           | 0.62            | 0.43 | 0.73 |
-| Random Forest | 0.73            | 0.58 | 0.92 |
-| RBF SVC (Tuned) | 0.81            | 0.63 | 1.0  |
+| Classifier      | Average CV F1 | Min  | Max  |
+| --------------- | ------------- | ---- | ---- |
+| Linear SVC      | 0.80          | 0.63 | 1.0  |
+| Gradient Boost  | 0.58          | 0.24 | 0.83 |
+| KNN             | 0.62          | 0.43 | 0.73 |
+| Random Forest   | 0.73          | 0.58 | 0.92 |
+| RBF SVC (Tuned) | 0.81          | 0.63 | 1.0  |
 
-The best performing model was Support Vector Machine CLassifier (SVC) using an RBF kernel, with values of 100.0 and 0.001 for the `C` and `gamma` parameters, respectively. This model was then used to predict daignosis on the left out validation set. On the validation set the model had a final F1 score of **0.69**, and an accuracy of **0.67**.
+The best performing model was Support Vector Machine CLassifier (SVC) using an RBF kernel, with values of 100.0 and 0.001 for the `C` and `gamma` parameters, respectively. This model was then used to predict daignosis on the left out validation set. On the validation set, the model had a final F1 score of **0.69**, and an accuracy of **0.67**.
 
 The figure below shows a confusion matrix of the model's predictions:
 
 ![alt text](c_matrix.png)
  
+### Discussion and Limitations
+
+An F1 of .69, and accuracy of 67% isn't bad for a binary classfication problem, especially considering the small sample size. It's possible that better performance could be achieved through several methods. This analysis uses 64 ROIs but the atlas used supports up to 444. Increasing the number fo features could improve the model. Conversely, dimensionality reduction could be used to reduce the number of features available to the model.
+
+Hyperparameter tuning of more advanced models could be another avenue for improved performance. The Random Forest classifier showed potential, and more time spent tweaking this model could produce better results.
+
+Finally, this analysis doesn't examine feature importance. It's likely that an analysis of a similar size or greater could be devoted to investigating feature importance for schizophrenia prediction, and so it was far beyond the scope of this project.
+
 ## Conclusion and Acknowledgements
 
-TBD
+

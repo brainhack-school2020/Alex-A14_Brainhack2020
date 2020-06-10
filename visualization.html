@@ -13086,6 +13086,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Welcome!
 This notebook contains some interactive visualizations of the data from the COBRE dataset available on Nilearn. Run the whole notebook to start the visualizations and use the drop-down menus to toggle between Schizophrenia Patients and Controls.</p>
+<p><strong>Note</strong>: The call to the data below will load only 30 subjects in interest of time. If you would like to load more, change the <code>n_subjects</code> parameter. If you would like to load all 146, set this parameter to 'None'</p>
 
 </div>
 </div>
@@ -13097,7 +13098,7 @@ This notebook contains some interactive visualizations of the data from the COBR
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#import data</span>
 <span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">datasets</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">fetch_cobre</span><span class="p">(</span><span class="n">n_subjects</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">fetch_cobre</span><span class="p">(</span><span class="n">n_subjects</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
 
 <span class="c1">#import atlas</span>
 <span class="n">parcellations</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">fetch_atlas_basc_multiscale_2015</span><span class="p">(</span><span class="n">version</span><span class="o">=</span><span class="s1">&#39;sym&#39;</span><span class="p">)</span>
@@ -13133,6 +13134,75 @@ This notebook contains some interactive visualizations of the data from the COBR
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#import phenotypic data</span>
+<span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">pheno</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">phenotypic</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#extract participant id from file paths</span>
+<span class="n">file_names</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">func</span><span class="p">:</span>
+    <span class="c1">#note the string slicing below is not best practice and will need to change if file paths change</span>
+    <span class="n">file_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">path</span><span class="p">[</span><span class="mi">39</span><span class="p">:</span><span class="mi">45</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#create dataframe of file paths and ids</span>
+<span class="n">files</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">func</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;path&#39;</span><span class="p">])</span>
+<span class="n">files</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">file_names</span>
+<span class="n">files</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">files</span><span class="o">.</span><span class="n">id</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#merge phenotypic data with file paths</span>
+<span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">pheno</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">pheno</span><span class="p">,</span> <span class="n">files</span><span class="p">,</span> <span class="n">on</span> <span class="o">=</span> <span class="s1">&#39;id&#39;</span><span class="p">)</span>
+
+<span class="c1">#fix string decoding</span>
+<span class="n">pheno</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pheno</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+<span class="n">pheno</span><span class="p">[</span><span class="s1">&#39;handedness&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pheno</span><span class="p">[</span><span class="s1">&#39;handedness&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+<span class="n">pheno</span><span class="p">[</span><span class="s1">&#39;subject_type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pheno</span><span class="p">[</span><span class="s1">&#39;subject_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+<span class="n">pheno</span><span class="p">[</span><span class="s1">&#39;diagnosis&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pheno</span><span class="p">[</span><span class="s1">&#39;diagnosis&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="c1"># import cleaned phenotypic data csv file from repo</span>
 <span class="n">pheno</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;pheno.csv&#39;</span><span class="p">)</span>
@@ -13164,7 +13234,7 @@ This notebook contains some interactive visualizations of the data from the COBR
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
@@ -13237,7 +13307,7 @@ This notebook contains some interactive visualizations of the data from the COBR
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># function to plot average correlation matrix by subject type (Patient vs. Control)</span>
@@ -13271,11 +13341,10 @@ This notebook contains some interactive visualizations of the data from the COBR
     <span class="n">time_series</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">func</span><span class="p">,</span> <span class="n">confounds</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">conf</span><span class="p">):</span>
         <span class="n">time_series</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">masker</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">confounds</span><span class="o">=</span><span class="n">confounds</span><span class="p">))</span>
-    <span class="c1"># calculate correlation matrices across subjects and display</span>
+    <span class="c1"># calculate correlation matrices across subjects</span>
     <span class="n">correlation_matrices</span> <span class="o">=</span> <span class="n">connectome_measure</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">time_series</span><span class="p">)</span>
 
-    <span class="c1"># Mean correlation matrix across 10 subjects can be grabbed like this,</span>
-    <span class="c1"># using connectome measure object</span>
+    <span class="c1"># Mean correlation matrix across all subjects</span>
     <span class="n">mean_correlation_matrix</span> <span class="o">=</span> <span class="n">connectome_measure</span><span class="o">.</span><span class="n">mean_</span>
 
     <span class="c1"># grab center coordinates for atlas labels</span>
@@ -13304,12 +13373,10 @@ This notebook contains some interactive visualizations of the data from the COBR
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
-<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">fixed</span><span class="p">,</span> <span class="n">interact_manual</span>
-<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">interact</span>
 
 <span class="n">interact</span><span class="p">(</span><span class="n">corr_matrix</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;Patients&#39;</span><span class="p">,</span> <span class="n">patients</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Controls&#39;</span><span class="p">,</span> <span class="n">controls</span><span class="p">)]);</span>
 </pre></div>
@@ -13332,13 +13399,13 @@ This notebook contains some interactive visualizations of the data from the COBR
 
  
  
-<div id="cf22af5c-1935-4ca5-9537-56e67d1b547e"></div>
+<div id="2280afa1-4040-48f1-ba9e-9720e515368c"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#cf22af5c-1935-4ca5-9537-56e67d1b547e');
+var element = $('#2280afa1-4040-48f1-ba9e-9720e515368c');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "067baf671a804e249dcd85acbc875a87", "version_major": 2, "version_minor": 0}
+{"model_id": "5462bf46740b493a8320b48edef6c477", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 

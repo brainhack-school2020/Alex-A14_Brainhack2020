@@ -43,7 +43,7 @@ Products of this project include:
  - A complete README summarizing the entire project and its results.
  - Week 3 Deliverable: 
      - [Plotly Histogram](http://htmlpreview.github.io/?https://github.com/brainhack-school2020/Alex-A14_Brainhack2020/blob/master/plotly.html)
-     - Binder With ipywidgets Correlation Matrices (**Currently Debugging**) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/brainhack-school2020/Alex-A14_Brainhack2020/master?filepath=visualization.ipynb)
+     - Binder With ipywidgets Correlation Matrices [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/brainhack-school2020/Alex-A14_Brainhack2020/master?filepath=visualization.ipynb)
  - A [Jupyter notebook](https://github.com/brainhack-school2020/Alex-A14_Brainhack2020/blob/master/analysis.ipynb) that contains all of the relevant code for the project, clearly formatted and commented.
  - A markdown formatted .md or .html document that contains code, descriptions, and visualizations from the project.
 
@@ -104,4 +104,8 @@ Finally, this analysis doesn't examine feature importance. It's likely that an a
 
 ## Conclusion and Acknowledgements
 
+This project has been a great introduction to working with fMRI data, and using Scikit Learn. The range of functions and clear documentation for both of these packages make them accessible and easy to learn. The project has also strengthened my skills in Python, particularly data management with Pandas.
 
+Apart from the main project, participating in Brainhack 2020 has had several benefits. I am more comfortable with shell coding and the introduction to WSL makes it easier for me to work in Linux environments. The focus on reproducible science has introduced me to numerous tools for making anlyses accessible, from Git to Docker. I am also looking forward to trying more tools for neuroimaging analysis, inlcuding fMRIPrep for preprocessing, and MNE (Python) and EEG Workshop (R) for processing EEG data. Although I've only had a brief introduction to many of these tools I feel like they are accessible with the experience that Brainhack has given me.
+
+I'd like to thank all of the instructors, presenters, TAs, and mentors who helped make Brainhack 2020 a success (in a new online format!). I look forward to seeing what Brainhack does in the future.

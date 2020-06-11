@@ -16,11 +16,11 @@ I'm a Psychology student at Concordia researching music cognition. I'm intereste
 
 ### Background
 
-This project will apply machine learning to predict schizophrenia diagnosis using fMRI data.
+This project uses machine learning to predict schizophrenia diagnosis using fMRI data.
 
 The data used is a resting state fMRI dataset of schizophrenia patients and healthy controls. The data comes from [The Center for Biomedical Research Excellence (COBRE)](http://fcon_1000.projects.nitrc.org/indi/retro/cobre.html).
 
-This project aims to predict schizophrenia diagnosis using resting state data. Machine learning techniques will be used to classify schizophrenia patients from controls. The COBRE data set also includes subtypes of schizophrenia and so this project will predict diagnosis amonng schizophrenia patients. My goal for this project is to gain basic experience with processing/cleaning fMRI data. Following this, I'd like to experiment with different machine learning methods (algorithms, corss-validation methods, hyperparamters) and see how they compare.
+This project aims to predict schizophrenia diagnosis using resting state data. Machine learning techniques will be used to classify schizophrenia patients from controls. My goal for this project was to gain basic experience with processing/cleaning fMRI data. Following this, I experiment with different machine learning methods (algorithms, cross-validation methods, tuning hyperparamters) and see how they compare.
 
 
 
@@ -30,7 +30,8 @@ The project will rely on the following technologies:
  * This README is built using [Markdown](https://guides.github.com/features/mastering-markdown/), to structure the text.
  * Processing of fMRI data is done with `nilearn` and the machine learning anlayses rely on `scikit-learn`.
  * `plotly.express` and `ipywidgets` are used to create interactive visualizations.
- * The main summary and results of the project will live in a [Jupyter Notebook](https://jupyter.org/index.html) 
+ * The main summary and results of the project will live in a [Jupyter Notebook](https://jupyter.org/index.html)
+ * Some interactive visualizations rely on a [Binder](https://jupyter.org/binder) environment.
  * Updating and version control relies on github, through commits and pull requests.
 
 ### Data 

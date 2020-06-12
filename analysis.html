@@ -13091,7 +13091,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#import data</span>
@@ -13100,25 +13100,6 @@ div#notebook {
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/aalbury/miniconda3/lib/python3.7/site-packages/numpy/lib/npyio.py:2372: VisibleDeprecationWarning: Reading unicode strings without specifying the encoding argument is deprecated. Set the encoding, use None for the system default.
-  output = genfromtxt(fname, **kwargs)
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13133,7 +13114,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#import phenotypic data</span>
@@ -13156,7 +13137,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#extract participant id from file paths</span>
@@ -13173,7 +13154,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#create dataframe of file paths and ids</span>
@@ -13189,7 +13170,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#merge phenotypic data with file paths</span>
@@ -13218,7 +13199,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#pheno.to_csv(&#39;pheno.csv&#39;, index=False)</span>
@@ -13235,7 +13216,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13436,7 +13417,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#create lists of filepaths for patients and controls</span>
@@ -13466,7 +13447,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
@@ -13518,67 +13499,19 @@ div#notebook {
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">OSError</span>                                   Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-9-004a9ee86654&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">     32</span>     )
-<span class="ansi-green-intense-fg ansi-bold">     33</span> <span class="ansi-red-fg"># Run app and display result inline in the notebook</span>
-<span class="ansi-green-fg">---&gt; 34</span><span class="ansi-red-fg"> </span>app<span class="ansi-blue-fg">.</span>run_server<span class="ansi-blue-fg">(</span>mode<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;inline&#39;</span><span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">~/miniconda3/lib/python3.7/site-packages/jupyter_dash/jupyter_app.py</span> in <span class="ansi-cyan-fg">run_server</span><span class="ansi-blue-fg">(self, mode, width, height, inline_exceptions, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    292</span>                 )
-<span class="ansi-green-intense-fg ansi-bold">    293</span> 
-<span class="ansi-green-fg">--&gt; 294</span><span class="ansi-red-fg">         </span>wait_for_app<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    295</span> 
-<span class="ansi-green-intense-fg ansi-bold">    296</span>         <span class="ansi-green-fg">if</span> mode <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">&#39;inline&#39;</span><span class="ansi-blue-fg">:</span>
+<div class="output_html rendered_html output_subarea ">
 
-<span class="ansi-green-fg">~/miniconda3/lib/python3.7/site-packages/retrying.py</span> in <span class="ansi-cyan-fg">wrapped_f</span><span class="ansi-blue-fg">(*args, **kw)</span>
-<span class="ansi-green-intense-fg ansi-bold">     47</span>             <span class="ansi-blue-fg">@</span>six<span class="ansi-blue-fg">.</span>wraps<span class="ansi-blue-fg">(</span>f<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     48</span>             <span class="ansi-green-fg">def</span> wrapped_f<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kw<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">---&gt; 49</span><span class="ansi-red-fg">                 </span><span class="ansi-green-fg">return</span> Retrying<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>dargs<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>dkw<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>call<span class="ansi-blue-fg">(</span>f<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kw<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     50</span> 
-<span class="ansi-green-intense-fg ansi-bold">     51</span>             <span class="ansi-green-fg">return</span> wrapped_f
-
-<span class="ansi-green-fg">~/miniconda3/lib/python3.7/site-packages/retrying.py</span> in <span class="ansi-cyan-fg">call</span><span class="ansi-blue-fg">(self, fn, *args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    210</span>                 <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> self<span class="ansi-blue-fg">.</span>_wrap_exception <span class="ansi-green-fg">and</span> attempt<span class="ansi-blue-fg">.</span>has_exception<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    211</span>                     <span class="ansi-red-fg"># get() on an attempt with an exception should cause it to be raised, but raise just in case</span>
-<span class="ansi-green-fg">--&gt; 212</span><span class="ansi-red-fg">                     </span><span class="ansi-green-fg">raise</span> attempt<span class="ansi-blue-fg">.</span>get<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    213</span>                 <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    214</span>                     <span class="ansi-green-fg">raise</span> RetryError<span class="ansi-blue-fg">(</span>attempt<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">~/miniconda3/lib/python3.7/site-packages/retrying.py</span> in <span class="ansi-cyan-fg">get</span><span class="ansi-blue-fg">(self, wrap_exception)</span>
-<span class="ansi-green-intense-fg ansi-bold">    245</span>                 <span class="ansi-green-fg">raise</span> RetryError<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    246</span>             <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 247</span><span class="ansi-red-fg">                 </span>six<span class="ansi-blue-fg">.</span>reraise<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>value<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>value<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>value<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    248</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    249</span>             <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>value
-
-<span class="ansi-green-fg">~/miniconda3/lib/python3.7/site-packages/six.py</span> in <span class="ansi-cyan-fg">reraise</span><span class="ansi-blue-fg">(tp, value, tb)</span>
-<span class="ansi-green-intense-fg ansi-bold">    701</span>             <span class="ansi-green-fg">if</span> value<span class="ansi-blue-fg">.</span>__traceback__ <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">not</span> tb<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    702</span>                 <span class="ansi-green-fg">raise</span> value<span class="ansi-blue-fg">.</span>with_traceback<span class="ansi-blue-fg">(</span>tb<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">--&gt; 703</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">raise</span> value
-<span class="ansi-green-intense-fg ansi-bold">    704</span>         <span class="ansi-green-fg">finally</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    705</span>             value <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">None</span>
-
-<span class="ansi-green-fg">~/miniconda3/lib/python3.7/site-packages/retrying.py</span> in <span class="ansi-cyan-fg">call</span><span class="ansi-blue-fg">(self, fn, *args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    198</span>         <span class="ansi-green-fg">while</span> <span class="ansi-green-fg">True</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    199</span>             <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 200</span><span class="ansi-red-fg">                 </span>attempt <span class="ansi-blue-fg">=</span> Attempt<span class="ansi-blue-fg">(</span>fn<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> attempt_number<span class="ansi-blue-fg">,</span> <span class="ansi-green-fg">False</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    201</span>             <span class="ansi-green-fg">except</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    202</span>                 tb <span class="ansi-blue-fg">=</span> sys<span class="ansi-blue-fg">.</span>exc_info<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">~/miniconda3/lib/python3.7/site-packages/jupyter_dash/jupyter_app.py</span> in <span class="ansi-cyan-fg">wait_for_app</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">    288</span>                     <span class="ansi-blue-fg">&#34;Address &#39;{url}&#39; already in use.\n&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">    289</span>                     &#34;    Try passing a different port to run_server.&#34;.format(
-<span class="ansi-green-fg">--&gt; 290</span><span class="ansi-red-fg">                         </span>url<span class="ansi-blue-fg">=</span>url
-<span class="ansi-green-intense-fg ansi-bold">    291</span>                     )
-<span class="ansi-green-intense-fg ansi-bold">    292</span>                 )
-
-<span class="ansi-red-fg">OSError</span>: Address &#39;http://127.0.0.1:8050&#39; already in use.
-    Try passing a different port to run_server.</pre>
+        <iframe
+            width="800"
+            height="650"
+            src="http://127.0.0.1:8050/"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
 </div>
+
 </div>
 
 </div>
@@ -13602,7 +13535,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#import atlas</span>
@@ -13617,7 +13550,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># visualize atlas</span>
@@ -13635,13 +13568,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;nilearn.plotting.displays.OrthoSlicer at 0x7f5b1c0e0890&gt;</pre>
+<pre>&lt;nilearn.plotting.displays.OrthoSlicer at 0x7f0230866f10&gt;</pre>
 </div>
 
 </div>
@@ -13675,7 +13608,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nilearn.input_data</span> <span class="kn">import</span> <span class="n">NiftiLabelsMasker</span>
@@ -13699,7 +13632,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13734,41 +13667,26 @@ div#notebook {
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
 Resampling labels
-finished 1 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 2 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 3 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 4 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 5 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 6 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 7 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 8 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 9 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 10 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 11 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 12 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 13 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 14 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 15 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 16 of 146
+[NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
 ________________________________________________________________________________
 [Memory] Calling nilearn.input_data.base_masker.filter_and_extract...
-filter_and_extract(&#39;/home/aalbury/nilearn_data/cobre/fmri_0040059.nii.gz&#39;, &lt;nilearn.input_data.nifti_labels_masker._ExtractionFunctor object at 0x7f5b17e4bbd0&gt;, 
+filter_and_extract(&#39;/home/aalbury/nilearn_data/cobre/fmri_0040072.nii.gz&#39;, &lt;nilearn.input_data.nifti_labels_masker._ExtractionFunctor object at 0x7f02300f3dd0&gt;, 
 { &#39;background_label&#39;: 0,
   &#39;detrend&#39;: False,
   &#39;dtype&#39;: None,
@@ -13781,270 +13699,139 @@ filter_and_extract(&#39;/home/aalbury/nilearn_data/cobre/fmri_0040059.nii.gz&#39
   &#39;strategy&#39;: &#39;mean&#39;,
   &#39;t_r&#39;: None,
   &#39;target_affine&#39;: None,
-  &#39;target_shape&#39;: None}, confounds=&#39;/home/aalbury/nilearn_data/cobre/fmri_0040059.tsv&#39;, dtype=None, memory=Memory(location=nilearn_cache/joblib), memory_level=1, verbose=1)
-[NiftiLabelsMasker.transform_single_imgs] Loading data from /home/aalbury/nilearn_data/cobre/fmri_0040059.nii.gz
+  &#39;target_shape&#39;: None}, confounds=&#39;/home/aalbury/nilearn_data/cobre/fmri_0040072.tsv&#39;, dtype=None, memory=Memory(location=nilearn_cache/joblib), memory_level=1, verbose=1)
+[NiftiLabelsMasker.transform_single_imgs] Loading data from /home/aalbury/nilearn_data/cobre/fmri_0040072.nii.gz
 [NiftiLabelsMasker.transform_single_imgs] Extracting region signals
 [NiftiLabelsMasker.transform_single_imgs] Cleaning extracted signals
-_______________________________________________filter_and_extract - 0.4s, 0.0min
-finished 17 of 146
+_______________________________________________filter_and_extract - 0.9s, 0.0min
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 18 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 19 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 20 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 21 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 22 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 23 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 24 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 25 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 26 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 27 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 28 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 29 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 30 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 31 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 32 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 33 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 34 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 35 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 36 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 37 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 38 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 39 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 40 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 41 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 42 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 43 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 44 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 45 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 46 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 47 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 48 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 49 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 50 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 51 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 52 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 53 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 54 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 55 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 56 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 57 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 58 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 59 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 60 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 61 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 62 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 63 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 64 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 65 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 66 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 67 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 68 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 69 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 70 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 71 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 72 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 73 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 74 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 75 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 76 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 77 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 78 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 79 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 80 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 81 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 82 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 83 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 84 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 85 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 86 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 87 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 88 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 89 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 90 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 91 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 92 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 93 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 94 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 95 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 96 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 97 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 98 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 99 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 100 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 101 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 102 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 103 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 104 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 105 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 106 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 107 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 108 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 109 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 110 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 111 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 112 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 113 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 114 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 115 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 116 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 117 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 118 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 119 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 120 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 121 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 122 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 123 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 124 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 125 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 126 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 127 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 128 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 129 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 130 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 131 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 132 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 133 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 134 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 135 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 136 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 137 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 138 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 139 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 140 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 141 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 142 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 143 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 144 of 146
 [NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 145 of 146
-[NiftiLabelsMasker.fit_transform] loading data from /home/aalbury/nilearn_data/basc_multiscale_2015/template_cambridge_basc_multiscale_nii_sym/template_cambridge_basc_multiscale_sym_scale064.nii.gz
-finished 146 of 146
 </pre>
 </div>
 </div>
@@ -14055,7 +13842,7 @@ finished 146 of 146
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># create pandas dataframe of features and phenotypic data</span>
@@ -14077,13 +13864,233 @@ finished 146 of 146
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">full</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[14]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>current_age</th>
+      <th>gender</th>
+      <th>handedness</th>
+      <th>subject_type</th>
+      <th>diagnosis</th>
+      <th>frames_ok</th>
+      <th>fd</th>
+      <th>fd_scrubbed</th>
+      <th>path</th>
+      <th>features</th>
+      <th>file</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>40061</td>
+      <td>18</td>
+      <td>Male</td>
+      <td>Right</td>
+      <td>Control</td>
+      <td>None</td>
+      <td>133</td>
+      <td>0.25512</td>
+      <td>0.22657</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040061....</td>
+      <td>[0.12785325357282862, 0.24422311479417322, 0.0...</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040061....</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>40090</td>
+      <td>18</td>
+      <td>Female</td>
+      <td>Right</td>
+      <td>Control</td>
+      <td>None</td>
+      <td>150</td>
+      <td>0.16963</td>
+      <td>0.16963</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040090....</td>
+      <td>[0.05584897620355883, 0.11246991477285287, 0.0...</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040090....</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>40046</td>
+      <td>18</td>
+      <td>Male</td>
+      <td>Left</td>
+      <td>Patient</td>
+      <td>295.70 depressed type</td>
+      <td>76</td>
+      <td>0.37504</td>
+      <td>0.30042</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040046....</td>
+      <td>[0.08678037911430761, 0.06380639929297223, 0.2...</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040046....</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>40002</td>
+      <td>19</td>
+      <td>Male</td>
+      <td>Right</td>
+      <td>Patient</td>
+      <td>295.3</td>
+      <td>67</td>
+      <td>0.40006</td>
+      <td>0.21575</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040002....</td>
+      <td>[0.1456258349041035, -0.06313977045762048, 0.0...</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040002....</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>40117</td>
+      <td>19</td>
+      <td>Male</td>
+      <td>Right</td>
+      <td>Patient</td>
+      <td>295.3</td>
+      <td>133</td>
+      <td>0.20975</td>
+      <td>0.18410</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040117....</td>
+      <td>[0.17462308889197792, -0.11825290188441862, -0...</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040117....</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>141</th>
+      <td>40089</td>
+      <td>62</td>
+      <td>Male</td>
+      <td>Right</td>
+      <td>Patient</td>
+      <td>295.3</td>
+      <td>40</td>
+      <td>0.70368</td>
+      <td>0.72439</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040089....</td>
+      <td>[0.010289989396440208, 0.05385253837186407, 0....</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040089....</td>
+    </tr>
+    <tr>
+      <th>142</th>
+      <td>40040</td>
+      <td>63</td>
+      <td>Male</td>
+      <td>Right</td>
+      <td>Patient</td>
+      <td>295.3</td>
+      <td>42</td>
+      <td>0.58301</td>
+      <td>0.40646</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040040....</td>
+      <td>[-0.05942811380550243, 0.005379451667081145, 0...</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040040....</td>
+    </tr>
+    <tr>
+      <th>143</th>
+      <td>40028</td>
+      <td>64</td>
+      <td>Male</td>
+      <td>Right</td>
+      <td>Patient</td>
+      <td>295.3</td>
+      <td>55</td>
+      <td>0.42364</td>
+      <td>0.26393</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040028....</td>
+      <td>[0.1526906170886252, 0.2197449376315366, 0.301...</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040028....</td>
+    </tr>
+    <tr>
+      <th>144</th>
+      <td>40086</td>
+      <td>65</td>
+      <td>Male</td>
+      <td>Right</td>
+      <td>Control</td>
+      <td>None</td>
+      <td>48</td>
+      <td>0.39595</td>
+      <td>0.32296</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040086....</td>
+      <td>[0.44868677474053265, -0.1957847795785304, -0....</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040086....</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>40007</td>
+      <td>65</td>
+      <td>Female</td>
+      <td>Right</td>
+      <td>Patient</td>
+      <td>295.3</td>
+      <td>40</td>
+      <td>0.70044</td>
+      <td>0.72077</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040007....</td>
+      <td>[0.08900283860731034, 0.11650348658751322, 0.3...</td>
+      <td>/home/aalbury/nilearn_data/cobre/fmri_0040007....</td>
+    </tr>
+  </tbody>
+</table>
+<p>146 rows × 12 columns</p>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14097,7 +14104,7 @@ finished 146 of 146
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -14171,7 +14178,7 @@ finished 146 of 146
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -14204,7 +14211,7 @@ finished 146 of 146
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># build SVC classifier</span>
@@ -14219,7 +14226,7 @@ finished 146 of 146
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># F1 score by averaging each fold</span>
@@ -14266,7 +14273,7 @@ finished 146 of 146
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># build gradient boost classifier</span>
@@ -14284,7 +14291,7 @@ finished 146 of 146
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#train model</span>
@@ -14334,7 +14341,7 @@ We'll try K Nearest Neighbors next.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># K Nearest Neighbours</span>
@@ -14383,7 +14390,7 @@ We'll try K Nearest Neighbors next.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Random Forest</span>
@@ -14447,7 +14454,7 @@ We'll try K Nearest Neighbors next.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">validation_curve</span>
@@ -14468,7 +14475,7 @@ We'll try K Nearest Neighbors next.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Creating a Pandas dataframe of the results</span>
@@ -14516,7 +14523,7 @@ We'll try K Nearest Neighbors next.</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;seaborn.axisgrid.FacetGrid at 0x7f5b15af9950&gt;</pre>
+<pre>&lt;seaborn.axisgrid.FacetGrid at 0x7f0229bccc50&gt;</pre>
 </div>
 
 </div>
@@ -14529,7 +14536,7 @@ We'll try K Nearest Neighbors next.</p>
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAakAAAGSCAYAAABZkT41AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADh0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uMy4xLjMsIGh0dHA6Ly9tYXRwbG90bGliLm9yZy+AADFEAAAgAElEQVR4nO3de5xcdX3/8ddnd7O530hCQkhCQhKQYLmEBVH7ExHQIAoqiqCtxFKpF0RaW8TWHwL+rGi11bYIplVBWwmI1gaNoCDgFc0SLpJgIERCLuzmns2FzWY3n98f58zu7GR25+zsOWdmz7yfj0cezJxzZr7f7JD57Pd7Pt/vx9wdERGRalRX6Q6IiIj0RUFKRESqloKUiIhULQUpERGpWgpSIiJStRSkRESkajVUugMDtWjRIr/vvvsq3Q0Rkf5YpTuQFUNuJLVt27ZKd0FERFIy5IKUiIjUDgUpERGpWgpSIiJStRSkRESkailIiYhI1VKQEhGRqqUgJSIiVUtBSkREqpaClIiIVC0FKRERqVoKUiIiUrUS22DWzL4BvAXY4u6vLHLegK8Abwb2A4vdfWVS/cmSzq5DfH/lJu5q3sBLu17mqAkjeXfTTC4+bQb1dfHua6m21JbaSq4tKc3cPZk3NnsdsBf4Vh9B6s3ARwmC1KuAr7j7q0q9b1NTkzc3N8fd3SGjs+sQV33nce5b1XLYuUUnTuPf33MqDfXxDJDVltpSW2W3pWgWk8SCFICZzQZ+2EeQ+hrwsLvfGT5fA7ze3V/q7z1rPUjdvWID137vqT7Pv2Ph0TQdc0QsbTW/sIPvP75JbakttRX6wjtP4pKmmVHeSkEqJpUMUj8Ebnb3X4bPHwQ+4e79RqBaD1IX3/prHlu/s9LdEKlJTcdM5J4PvSbKpQpSMalk4kSxD7FoxDSzK82s2cyat27dmnC3qteGHftZtWl3pbshUrM273q50l2oOZWszLsRyB83zwA2F7vQ3ZcASyAYSSXfterSfrCLJT9fxy0PreVA56F+r503ZTTXnX9CLO1+7sfP8PzWfWpLbamt0PQJI2NpR6KrZJBaBlxlZksJEid2l7ofVYt+9odWbrx3Neu37490/ZVnzeXcBVNjaXvHvo5+73+pLbVVa21dcnqk+1ESo8Sm+8zsTuA3wPFmttHMrjCzD5rZB8NLlgPrgLXAfwAfTqovQ9GGHfv5yztW8Be3N3cHqFGN9Vy76HjeeELxf5CLTpzGxQtnxNaHi0+bwaITp6kttaW2EmhLokk0cSIJWU+caD/YxW2PPM+tDz/fa2rvgpOO4lMXnMBR40cG6zge38TdKzawedfLTJ8wkktOn8nFCxNaM6K21JbaGmhbSpyIiYJUFXnwmVZuuHcVG3b03Jydd+QYbrzwRF47b3IFeyYiA6QgFZNK3pOS0Ivb93Pjvat48A9buo+NaqznY+fM5/2vnUNjg3avEpHapCBVQe0Hu/jqw89z2yPP05E3tffWk6fzD28+gWnjR1SwdyIilacgVQHuzgPPbOHGe1excWfvqb2bLjqR18zV1J6ICChIpe6Fbfu48d5VPLSmZ1Hy6MZ6rjn3OBa/djbDYtqDTEQkCxSkUvJyRxdffXgtX3tkHR1dPVN7F548nX+44ASmjtPUnohIIQWphLk7P1ndyk33rmZT3pYqx00dw40XvpJXz51Uwd6JiFQ3BamY5GrQfOZHq9nf0cWoxno++Lq5/PaFHfz82Z6pvTHDG7jm3Plc/hpN7YmIlKIgFYNiNWj2tHfyTz9Z0+u6t50ynb9/8wkcqak9EZFIFKRi8P2Vm4oWScuZNm4EX770FM48VlN7IiIDofmmGNzVvKHf89MnjFCAEhEpg4JUDF4qUWOmZXd7Sj0REckWBakYHFWixoxq0IiIlEdBKgbvbuq/xoxq0IiIlEdBKgYXnzaD81Kq8SQiUksUpGJQX2d8YtHx3c8NGDeigS+88yRuee/C2OvdiIjUCqWgx2Tr3o7ux3+36Hg+/Pp5FeyNiEg2aCQVk9a2ngy+aVqsKyISCwWpmLQoSImIxE5BKib5a6GmqlihiEgsFKRiouk+EZH4KUjFJDfdN3Z4A6OHKx9FRCQOClIxaQ2n+zTVJyISHwWpGBw65GzZcwDQVJ+ISJwUpGKwbd8BOg85gMrAi4jESEEqBq27D3Q/njZ+eAV7IiKSLQpSMdAaKRGRZChIxSA/SGm6T0QkPgpSMWjNW8g7Tdl9IiKxUZCKgab7RESSoSAVg9xuE/V1xqQxSpwQEYmLglQMcvv2HTl2uGpHiYjESEEqBrnpPiVNiIjEK9EgZWaLzGyNma01s+uKnD/GzB40s6fM7GEzG3J11vd3dLKnvRPQ/SgRkbglFqTMrB64BTgfWABcZmYLCi77IvAtdz8JuAn4XFL9SUqLMvtERBKT5EjqDGCtu69z9w5gKXBRwTULgAfDxw8VOV/1tEZKRCQ5SQapo4ENec83hsfyPQlcHD5+OzDWzCYVvpGZXWlmzWbWvHXr1kQ6W65edaS0JZKISKySDFLF0ty84PnfAmeZ2ePAWcAmoPOwF7kvcfcmd2+aMmVK/D0dhJa8ffs0khIRiVeS1fk2AjPzns8ANudf4O6bgXcAmNkY4GJ3351gn2KnirwiIslJciS1AphvZnPMrBG4FFiWf4GZTTazXB8+CXwjwf4kQokTIiLJSSxIuXsncBVwP/AMcLe7rzKzm8zswvCy1wNrzOxZYCrw2aT6k5TusvEjGhjVqLLxIiJxSvRb1d2XA8sLjl2f9/ge4J4k+5C03HSfpvpEROKnHScGoSu/bLym+kREYqcgNQjb9x6gS2XjRUQSoyA1CCrRISKSLAWpQcjP7Juq6T4RkdgpSA2C1kiJiCRLQWoQNN0nIpIsBalB6LUlkvbtExGJnVafDkJuuq+hzpg8WkEqNt96G+x6ESbMgvf9oNK9GZr0M5SMUJAahNx035Fjh1OnsvHx2fUi7Hg+nbay+mWe5s9QJEEKUoPQGmb3KbNvCNOXufQlq7/ADDEKUmXad6CTPQcqXDZe/4ik1qT5/7x+gakKClJlqoqKvJoWG1qy+jNU4JAEKUiVqbXWSnToy2HwsvozzOrfS6qCUtDLpDVSIiLJU5AqU2ubysaLiCRNQapMvbZEqoXpPhGRClCQKlOvsvEaSYmIJEJBqky5e1LjRjQwsrG+wr0REckmBakydZeN11SfiEhiFKTKkF82XkkTIiLJUZAqQ37ZeN2PEhFJjoJUGVqU2ScikgoFqTL0KhuvkZSISGIUpMqgsvEiIulQkCqDpvtERNKhIFWGXmXjNZISEUmMglQZctN9w+qNSaMbK9wbEZHsUpAqQ0/Z+BEqGy8ikiDVkypDd9n4ccMPP5nVwnYiIhWgIDVA+WXji96PUgE4EZHYaLpvgKqibLyISI1QkBqgmisbLyJSQYkGKTNbZGZrzGytmV1X5PwsM3vIzB43s6fM7M1J9icOVVE2vqsTVn4b2jYFz9s2Bc8PdakttaW2hlJbUpK5ezJvbFYPPAucB2wEVgCXufvqvGuWAI+7+61mtgBY7u6z+3vfpqYmb25uTqTPUXz14bV84b41ANz5gTN59dxJvS/414XBPakj5sLVK+PvQFcn3LMYnrn38HMnvBXeeTvUx3SrUW2pLbVVbltK+41JkokTZwBr3X0dgJktBS4CVudd48C48PF4YHOC/YlFxaf7nryz+D8gCI4/eAPMOzeetp57QG2pLbWV39ZTS+HUP4unLYkkyZHUO4FF7v6X4fM/B17l7lflXXMU8BNgIjAaONfdHyvyXlcCVwLMmjXrtPXr1yfS5yj+6tvN3L+qFYBnblp0eFXepEdSX38jbPht/O8rIqXNPBOuuD/KlRpJxSTJe1LFPqTCiHgZcLu7zwDeDHzbzA7rk7svcfcmd2+aMmVKAl2NrqUt2BKpImXjW56Gl55Mt00R6bF7Y6V7UHOSnO7bCMzMez6Dw6fzrgAWAbj7b8xsBDAZ2JJgvwYlN92X6lTfzvXw0D/CU3dxeJwvMOEYeNUH42n3t7cG677UltpSW4HxM+JpRyJLMkitAOab2RxgE3Ap8J6Ca14EzgFuN7MTgBHA1gT7NChdh5yte1MsG79vO/zii7DiP6GrI9przro2vjnz4WNh2VV9n1dbaqvW2lr45/G0I5ElNt3n7p3AVcD9wDPA3e6+ysxuMrMLw8s+DnzAzJ4E7gQWe1I3yWKwLa2y8R374JF/gq+cDI9+tSdATZgFb7sNXvGW4q874a1w8mXx9eOU9wTvqbbUltqKvy2JJLHEiaRUMgX9yQ27uOiWXwHw0TfM4+NvPP7wiwaTONF1EFbeAQ9/HvblzXiOmgSvuxaa3g8Nw4M02aeWwo8+Dp3t0DACLvhS8A+oLub7ZGpLbamtctpS4kRMtOPEACS2JdKhQ/D09+GWM4J/GLkANWx0EJyufgLO/GAQoCBYp3Hqn8G4o4Pn444Onsf9j1VtqS21lWxbUpI2mB2ARMrGr3sYfvppeOmJnmN1DXDa4iBAjZ0aTzsiIkOQgtQAtMS5kHfzE/DADbDuod7HT3wHvOFTMGnu4N5fRCQDFKQGIJbpvh3r4Gf/D57+Xu/jx74ezr0Bpp9aZu9ERLJHQWoABlU2fu8W+Pk/QfM34FBnz/GjTg6C09w3xNZPEZGsUJAagNx034DKxh/YA7/+N/j1v8PBfT3HJ86Bc/4vLHg71Cl/RUSkGAWpAWhtyy3kLVI2vqsz2Py1e3v/jXDPFUFixP5tPdeNngJnfQIWXg4NAxyNiYjUGAWpiPYe6GRvWDb+sKSJYtv7dx6Ap+/ped44Bl77MTjzwzB8TPIdFhHJAAWpiPIz+w5LmuivfAbAsWfDxf8Joycn1DsRkWzSzZCI+l0j9fi3+3/xwZcVoEREyqAgFVG/a6R2b+r/xdreX0SkLApSEfW7Rmr80f2/WNv7i4iURUEqon6n+04tsX2/tvcXESmLglRE/U73nfIemHFG8Rdqe38RkbIpSEWUG0mNHzmMEcMKdkOuqz+8xlPDCLjoFnjXHdo9WUSkTEpBjyh3T6rP3c93PN/7eW57fxERKZtGUhF0dh1i655wt4m+dj/f9lz4QLXORETioiAVwba9HYRV45lWbEskgO1hkKoflk6nRERqgKb7ImgpVezw5Z2wb2vwuH4YdHWk1LMUTZjV+79ZaSur9DOUjFCQiqDXlkjFpvu2re15XN8I7Dv8mqHufT/IZltZlebPMKu/wCjQVwUFqQhKlo3f9mzP4zpN90kfsvqll9VfYPTLUlVQkIqgZEXe3P0oCEdSKcnql16a0vwZ6ktPZMAUpCJo7W8hL+Rl9pFu4oS+9AZPP0ORqqbsvgha8srGHzGqyEgpF6TGTAPTj1REJC76Ro0gF6SKlo3v6oQd64LHk+en3DMRkWxTkIogN91XdKpv13o4dDB4rCAlIhIrBakS9rQfZF9HFxAhs2/ycSn1SkSkNihIldBaKrMvP2likkZSIiJxUpAqoWX3ge7H08YX2RKp10hKQUpEJE4KUiWUXCOVG0k1jIDxM1PqlYhIbVCQKqHkbhO5hbyT5kGdfpwiInHSt2oJ/Vbk3b8D9m8PHmuqT0QkdokGKTNbZGZrzGytmV1X5Py/mNkT4Z9nzWxXkv0pR7/TfcWSJibMgiPmaqsiEZEYJLYtkpnVA7cA5wEbgRVmtszdV+eucfe/zrv+o8CpSfWnXLnpvgmjipSNL5Z+rm12RERik+RI6gxgrbuvc/cOYClwUT/XXwbcmWB/ypKb7uv3fhTA5Hkp9UhEpHYkGaSOBjbkPd8YHjuMmR0DzAF+1sf5K82s2cyat27dGntH+9LZdYhte8Oy8VojJSKSuiSDlBU55n1ceylwj7t3FTvp7kvcvcndm6ZMmRJbB0vZuvdAXtn4foLU2OkwfExq/RIRqRWRg5SZ/amZvT98PMXM5pR4yUYgf+HQDGBzH9deShVP9UGRirxdB2HnH4PHyuwTEUlEpCBlZp8GPgF8Mjw0DPivEi9bAcw3szlm1kgQiJYVee/jgYnAb6J2Oi39rpHa+QIc6gweK0iJiCQi6kjq7cCFwD4Ad98MjO3vBe7eCVwF3A88A9zt7qvM7CYzuzDv0suApe7e11RgxfReI1WwJZI2lhURSVzUFPQOd3czcwAzGx3lRe6+HFhecOz6guc3ROxD6lr39Ozb1/8aKWX2iYgkIepI6m4z+xowwcw+ADwA/Edy3aoOvcrG9xekNJISEUlEpJGUu3/RzM4D2oDjgevd/aeJ9qwK5HabaKyv44jRBWXjc2ukGkbCuKKZ9SIiMkglg1S4c8T97n4ukPnAlK+7bPy44ZgVZNTn7klN1sayIiJJKfntGq5d2m9m41PoT1Vp7Wu3iX3b4eWdwWMt4hURSUzUxIl24Pdm9lPCDD8Ad786kV5Vgfyy8YetkVJmn4hIKqIGqR+Ff2pGv2ukVI1XRCQVURMn7ggX5OaGDWvc/WBy3aq8XmXjC4NUr41lFaRERJISKUiZ2euBO4AXCPbkm2lml7v7z5PrWmX1qiN12HSf1kiJiKQh6nTfl4A3uvsaADM7jmCvvdOS6lil9T/dFwapcTOgMdK6ZhERKUPU3OlhuQAF4O7PEuzfl1ktfS3k7ewI9u0DTfWJiCQs6kiq2cy+Dnw7fP5e4LFkulQd8qf7jhyXt2/fzj9CrqKIgpSISKKiBqkPAR8Bria4J/Vz4KtJdaoa5Kb7JhaWjVf6uYhIaqIGqQbgK+7+z9C9C8Xw/l8ytOWm+7SxrIhI5US9J/UgMDLv+UiCTWYzKb9s/LT+Mvs0khIRSVTUIDXC3ffmnoSPRyXTpcrrt2x8bo3UsNEwbnq6HRMRqTFRg9Q+M1uYe2JmTcDLyXSp8nqVjc8PUu69N5Yt3HRWRERiFfWe1DXAd81sM+DAdODdifWqwnqtkcqf7tu3Ddp3B4+1sayISOL6HUmZ2elmNs3dVwCvAO4COoH7gD+m0L+K6D2SyssPUWafiEiqSk33fQ3oCB+/Gvh74BZgJ7AkwX5VVEtbH2Xje+3Zp8w+EZGklZruq3f3HeHjdwNL3P17wPfM7Ilku1Y5fW6JpMw+EZFUlRpJ1ZtZLpCdA/ws71zU+1lDTm6677Cy8flB6oi5KfdKRKT2lAo0dwKPmNk2gmy+XwCY2Txgd8J9q5jWvsrG5+5JjZ8FjZnNwBcRqRr9Bil3/6yZPQgcBfzE3cPVQ9QBH026c5Xg7t379vXeWPYA7FofPNaefSIiqSg5ZefujxY59myxa7Ngz4FO9hcrG79jHfih4LGClIhIKqIu5q0ZrX2V6FDJeBGR1ClIFWiJktmnhbwiIqlQkCrQayHveKWfi4hUkoJUgT7XSOUW8jaOgbHTUu6ViEhtyuxap3IVne5z7xlJTZ6vjWVFpKqY2SSCkkoA04AuYGv4/Ax37yj6wiFAQapAy+6eLZG6y8bv3QIH2oLHuh8lIlXG3bcDpwCY2Q3AXnf/YkU7FRNN9xUoWjZeG8uKyBBkZp8zs4/kPf+8mX3YzM41s4fM7AdmttrMbrFw5wIzO9/MfmNmK83sLjMbXbm/gYLUYXLTfdpYVkQy4D+BxQBmVg+8i2AnIYBXEZRh+hPgBOAiMzsSuA44x90XAk8BH0u5z70kGqTMbJGZrTGztWZ2XR/XXBJG8lVm9p0k+1PKwb7KxiuzT0SGIHd/HthjZn8CnA/8zt13hqcfdfcX3L0LWAr8KfAaYAHw63AT8fcCs9PveY/E7kmFUfsW4DxgI7DCzJa5++q8a+YDnwRe6+47wyheMVv3HMCLlY3vDlIGRxyber9ERAbh6wSjqdkE5ZdyvOA6Bwy4z93/PJWeRZDkSOoMYK27rwszS5YCFxVc8wHgllxkd/ctCfanpPzMvqnFdpuYMAuGjUy5VyIig/I94K0EiRUP5B0/08xmhQOKS4BfAr8GzjKzYwHMbHQ4mKiYJIPU0cCGvOcbw2P5jgOOM7NfmdmjZrYowf6U1GtLpNx038F22PVi8FjbIYnIEOPu7cDPgTvdcxuQAkFA+hLwe+BZYJm7twJXAHeZ2ZPhNRW9x5FkCnqxxUSFw8sGYD7wemAG8Asze6W77+r1RmZXAlcCzJo1K/6ehoqukdrxPN3d1v0oEaly7n5D/nMzqyOY2XpbwaX73P1dRV7/U+CniXVwgJIcSW0EZuY9nwFsLnLN/7r7QXf/I7CGIGj14u5L3L3J3ZumTJmSWIeLTvf1SprQSEpEho4wYeJ5gvtM6yrdn3IkGaRWAPPNbI6ZNQKXAssKrvkBcDaAmU0mGFZW7AdZdLpPG8uKyBDl7r939znufm3B8QfcvXBkVZUSC1Lu3glcBdwPPAPc7e6rzOwmM7swvOx+YLuZrQYeAv4uXDldEbmRVGNDHRNHDQsOblf6uYhIpSS6LZK7LweWFxy7Pu+xA38T/qm41rZgjdTU/LLxucy+4eNgTEUz5EVEao52nAi5e3eZDm0sKyJSHRSkQm3tnbx8MCwbnwtSe1qgY2/wWPejRERSpyAVKlpHSiXjRWSIMrNJZvZE+KfFzDblPW+M+B7fNLPjk+5rf1SqI9RSLLNvu9LPRSR5s6/7UQPwPoKFtDMJNkL4OnDHCzdf0FXOe0Yp3xHufG4Fi3zz3+P95bQdJ42kQqXXSCmzT0TiFwaouwiC0msIgtRrwud3h+djY2bzzOxpM7sNWAkcZWZLzKw53Oj7+rxrf2lmp5hZg5ntMrObzezJsJRHKplkClKhftdIWZ02lhWRpLwPeEcf594BJLHZ6wLg6+5+qrtvAq5z9ybgZOA8M1tQ5DXjgUfc/WTgN8BfJNCvwyhIhYpuiZQLUhOOgYbhFeiViNSAKwZ5vhzPu/uKvOeXmdlKgpHVCQRBrNDL7v7j8PFjpFTCQ/ekQvmJE0eOGw4d+2F3uD+u7keJSHJmljifxIal+3IPwl3OPwac4e67zOy/gBFFXtOR97iLlOKHRlKh3EjqiNGNDG+o18ayIpKWDSXOv5hw++OAPUCbmR0FvCnh9gZEI6lQy+7cbhPF9uxTyXgRSUwuYaK/80laCawGnibYO/VXCbc3IApSBGXjt+8Ly8aPC+89KbNPRNJxB3ABxZMnvg98a7AN5JfvcPe1hKnp4XOnj+QMd//TvKcT8o4vJShkmzhN9wFb8svGa42UiKQoXAf1boJsuV8RTP/9Knx+SbnrpLJCIyl6L+SdWrjbxIjxMDq5GlYiIi/cfEEn8M3wj+TRSIoiWyK5w7a1wYHJx2ljWRGRClGQomAkNX4EtG2Gg2GGpjaWFRGpGAUpioykdD9KRKQqKEhRZLeJbQpSIiLVQEGKnum+xoY6JowaVlCiQ+nnIjL0mNnDZvamgmPXmNlX+3nN3vC/083snn7et6lE29eY2ahy+l1I2X30TPdNGzciKBvfvbFsPUycU8GeiUhNuGF8n6U6uGF3uSnodwKXAvfnHbsU+LtSL3T3zcA7y2wX4Brgv4D9g3gPQCOpoGx8W0HZ+FyQmjgbGiLVBhMRKU8QoPos1RGeL8c9wFvMbDiAmc0GpgNPmNmDZrbSzH5vZhcVvtDMZpvZ0+HjkWa21MyeMrO7gJF5192aV+LjxvDY1WE7D5nZQ+GxN4blPVaa2XfNbEzUv0TNB6m2lztpPxjU+5o6fgR07IO2jcFJ3Y8SkeQlUqojLHr4O2BReOhSgmD4MvB2d18InA18KSx+2JcPAfvd/STgs8Bpeef+ISzxcRJwlpmd5O7/CmwGznb3s81sMvAp4NywzWbgb6L+PWo+SPVOmhgO29f2nFSQEpHkJVmqIzflR/jfOwED/tHMngIeAI4GpvbzHq8jmLrD3Z8Cnso7d0lY4uNx4ESKl/g4Mzz+KzN7ArgcOCbqX6Dm70kdVpF32+qek1ojJSLJS7JUxw+AfzazhcBId19pZouBKcBp7n7QzF6geGmOfF54wMzmAH8LnO7uO83s9j7ex4Cfuvtl5fwFan4kdVhFXm0sKyLpSqxUh7vvBR4GvkEwioKgwu6WMECdTelRzc+B9wKY2SsJpvYgKPGxD9htZlOB8/NeswcYGz5+FHitmc0L32OUmUX+cq35IHXYGikt5BWRdJUqxTHYUh13EpSFz+1a/t9Ak5k1EwSfP5R4/a3AmHB68FqC+1y4+5ME03yrCIJgfomPJcCPzewhd98KLAbuDN/jUeAVUTuv6b7DpvvCNVIjJ8KoSRXqlYjUkERLdbj7/xBMueWebwNe3ce1Y8L/vgC8Mnz8Mj33tQqvX9zH8X8D/i3v+c+A08vpf82PpLbkB6mxjbD9+eDJpPnaWFZEkhesg+qzVMcg1kllgkZSYZCaNLqRxn0vwcFw7ZnuR4lIWm7YrVIdfaj5kVSvsvG97kepZLyISKXVdJDqVTZemX0iIlWnpoNUftn4qYftfq4gJSJSaTUdpPKLHU7Lz+yrawj27RMRkYpKNEiZ2SIzW2Nma83suiLnF5vZVjN7Ivzzl0n2p1CvYofj87ZEmjgH6oel2RURESkisew+M6sHbgHOAzYCK8xsmbuvLrj0Lne/Kql+9Cd/JDV9ZCe0bQqeaBGviEhVSHIkdQaw1t3XuXsHwWrnw7aEr6T8kdQM39xzQkFKRKQqJBmkjqb3nlQbw2OFLg7rlNxjZqU2WoxV/m4TRx7I66o2lhURqQpJBqli2zUU7qR7LzA7rFPyAMH2IIe/kdmVYWGt5q1bt8bWwdx03/CGOka1Pd9zQpl9IiJVIckgtZHeW9DPICiE1c3dt7v7gfDpf9C7mFb+dUvcvcndm6ZMmRJbB7vLxo8fgamOlIhI1UkySK0A5pvZHDNrJNigcFn+BWZ2VN7TC4FnEuxPL/ll43utkRo1CUYdkVY3RESkH4ll97l7p5ldBdwP1APfcPdVZnYT0Ozuy4CrzexCoBPYQbCdeyryy8YfNbYR1oUjKd2PEhGpGoluMOvuy4HlBceuz3v8SeCTSfahL/lJE8eN3AWd4XNN9YmIVI2a3XEiP0jNrWvpOaEgJSJSNWo2SOWXjZ/ZtbHnhDL7RESqRs0GqfyR1JSOF3tO6J6UiEjVUJACxu39Y/CgbhhMPKZCPXwOVQwAABDBSURBVBIRkUI1G6Typ/uG714XPDjiWG0sKyJSRWo2SOVGUrNGdWJ7XgoOKmlCRKSq1GyQyu02cero7T0HFaRERKpKTQapjs5DbNvbAcCJw1t7TihpQkSkqtRkkNqyp+d+1Ly6l3pOKP1cRKSq1GSQyq8j1XuN1LwK9EZERPpSk0GqZfeB7sfda6RGT4GREyvUIxERKaY2g1Q4kqrjEOP2rQ8O6n6UiEjVqckglZvuO9q2UncoSKBQZp+ISPWpySCVq8g71/KTJhSkRESqTW0GqXAkdVy9MvtERKpZTQap3HTficO39BycpMw+EZFqU3NByt27p/vm1W0ODtY3wgRtLCsiUm1qLkjtfvkgBzqDsvEzujYFB484FuoTLVIsIiJlqLkglbsfNZb9jO/aERxU0oSISFWqvSAVTvUda5t7DmqNlIhIVaq5IJVLmpibH6SU2SciUpVqLkjltkQ6VhvLiohUvdoLUkVHUko/FxGpRjUXpHLTfcfmdpsYMxVGjK9gj0REpC81F6RadrdTxyHm1LUEB5Q0ISJStWouSLW2tTPDttJIZ3BA6eciIlWrpoLUgc4utu/rKLgfpSAlIlKtaipIbWkLM/uUfi4iMiTUVJAqukZKG8uKiFStmgpS3ennuTVS9cNhwqwK9khERPpTW0GqcEukSXOhrr6CPRIRkf7UVJBqbWtnHHuZYm3BASVNiIhUtUSDlJktMrM1ZrbWzK7r57p3mpmbWVOS/WlpO9C7ZLzWSImIVLXEgpSZ1QO3AOcDC4DLzGxBkevGAlcDv02qLzmtu9uZW6fMPhGRoSLJkdQZwFp3X+fuHcBS4KIi130G+ALQnmBfgCBx4tj8kZT27BMRqWpJBqmjgQ15zzeGx7qZ2anATHf/YYL9AMKy8W3tBennmu4TEalmSQYpK3LMu0+a1QH/Any85BuZXWlmzWbWvHXr1rI6s2v/QTo6D+VtLDsNRowr671ERCQdSQapjcDMvOczgLxhDGOBVwIPm9kLwJnAsmLJE+6+xN2b3L1pypQpZXWmpa2dero4xsKNZZXZJyJS9ZIMUiuA+WY2x8wagUuBZbmT7r7b3Se7+2x3nw08Clzo7s1JdKalrZ2ZtoVG6woOKGlCRKTqJRak3L0TuAq4H3gGuNvdV5nZTWZ2YVLt9qV1d7s2lhURGWIaknxzd18OLC84dn0f174+yb4cntmnICUiUu1qZseJVmX2iYgMOTUTpFp2t3NsuLGsN4yA8TNLvEJERCqtdoJU24HukZRNmgd1NfNXFxEZsmrmm7p991Ym2Z7gie5HiYgMCTURpA50djHx5fU9B3Q/SkRkSKiJILWl7YA2lhURGYJqIkgFe/ZpY1kRkaGmNoJU4UJeTfeJiAwJNRGkWtvau0vGHxg5FYaPqXCPREQkipoIUlt27mWWbQGg8wiNokREhoqaCFKdO9YxLNxYtuFIJU2IiAwVNRGkRuxa1/24cerxFeyJiIgMRE0EqbH7/tj92KZoJCUiMlRkPki5O1MOvNhzQJl9IiJDRuaD1K79B5kdFgQ+YCNg3NEV7pGIiESV+SDVkleiY+fIWdpYVkRkCMn8N/b2rZuZaHsB2D/22Ar3RkREBiLTQarzYAcHHvlK9/MZrQ+y4vtfoauzs4K9EhGRqDIbpDoPdvDUl9/BOdu/032skYOc/tT1PPkvb6PzYEcFeyciIlFkNkg9fu+tLNz3C9x7H3eHhft+wcof3laZjomISGSZDVJjn1kKgFnv47nnY1ffmXKPRERkoDIbpCYc3NLv+YklzouISOVlNkjtGnZkv+d3ljgvIiKVl9kgteeESwGK3pMC2LPgspR7JCIiA5XZILXwwo+wcvT/KXpPauXo/8Npb/1wZTomIiKRZTZI1Tc0cNI13+d3J3+GvTaaTurYa6P53cmf4eS//gH1DQ2V7qKIiJRgXjgfVuWampq8ubm50t0QEemPlb5EosjsSEpERIY+BSkREalaClIiIlK1FKRERKRqKUiJiEjVUpASEZGqlWiQMrNFZrbGzNaa2XVFzn/QzH5vZk+Y2S/NbEGS/RERkaElsSBlZvXALcD5wALgsiJB6Dvu/ifufgrwBeCfk+qPiIgMPUmOpM4A1rr7OnfvAJYCF+Vf4O5teU9HA0NrZbGIiCQqyb2BjgY25D3fCLyq8CIz+wjwN0Aj8IZib2RmVwJXAsyaNSv2joqISHVKciRVbFuQw0ZK7n6Lu88FPgF8qtgbufsSd29y96YpU6bE3E0REalWSY6kNgIz857PADb3c/1S4NZSb/rYY49tM7P1ZfRnMrCtjNeVQ22pLbVV223d5+6L4u5MLUoySK0A5pvZHGATcCnwnvwLzGy+uz8XPr0AeI4S3L2soZSZNbt7UzmvVVtqS22pLamMxIKUu3ea2VXA/UA98A13X2VmNwHN7r4MuMrMzgUOAjuBy5Pqj4iIDD2JFlVy9+XA8oJj1+c9/liS7YuIyNBWSztOLFFbakttqa0qbkuKGHJFD0VEpHbU0khKRESGGAUpERGpWgpSIiJStRSkRESkatVUkDKz96fY1itSbOv3Cb73VDNbaGanmtnUpNqReOjzkqypqew+M3vR3VPZoTbutszsHX2dAm4rdyeOfto7BbgNGE+wYwgEW1vtAj7s7itjbm88sIhgY2In2ELrfnffFWc7YVtvAt5W0Nb/uvt9MbczHvhk2Fbu89kC/C9wc5x/N31esbST2ucl0WUuSJnZU32dAo5z9+ExtvWv/bR1ubuPi7Gtg8B/U7ycyTvdfWxcbYXtPQH8lbv/tuD4mcDX3P3kGNt6H/Bp4Cf0/oI9D7jR3b8VY1tfBo4DvkWwv2SurfcBz8W5wNzM7gd+Btzh7i3hsWkEO6uc6+7nxdiWPq/Bt5Xa5yXRZTFItQJvIthmqdcp4NfuPj3GtvYAHwcOFDn9JXefHGNbjxEEvqeLnNvg7jOLvGww7T3n7vP7OLfW3efF2NYa4FWFv6ma2UTgt+5+XIxtPVvs/czMgGf7+juX2dYadz9+oOfKbEuf1+DbSu3zkugS3RapQn4IjHH3JwpPmNnDMbe1Anja3X9dpK0bYm7rGqCtj3Nvj7ktgB+b2Y8IfoPN1QWbSfAbbKzTLAS/QBT7bekQxUu+DEa7mZ3h7r8rOH460B5zW+vN7FqC38xbIbhnBCymd621OOjzGrw0Py+JKHMjqTSZ2RFAu7vvr3RfkmBm5xNUUz6a4MtnI7As3JMxznYuB64nmD7KfRnMIpg++oy73x5jWwsJSsKMpWf6aCbBLwAfdvfHYmxrInAdwc/wyPBwK7AM+Ly774irrbA9fV6DayvVz0uiyWSQCqcCzqD3jdbfeYJ/2TBgubsXTjMmzsze4u4/TLvdOIVfEG+i9xfs/Un9PMN7Dd1t5e5BSDT6vCQtmQtSZvZG4KsEtanyb+rOI/jN6ycxtjUL+AJwDkEWlQHjCG6+XufuL8TVVol+3Ojun06jrbC9K91dG28OgpktjDvjrp+29HkNUpqfl/SWxXtSXyHIxHkh/2BYfHE5cEKMbd0FfBl4r7t3he3UA+8iqDR8Zoxt5dZe5aZzciPEZWkGqFxXUmvIbIm7X5lSWyvdfWEabQEfAj6QUlv6vAYvzc9L8mRxJPUccIK7dxYcbwRWx5zl1F9GVZ/nymzrE8BlBMEvPxX3UmCpu98cV1sR+vJ+d/9mSm2dFud9B0mWPi+JWxaD1CeBSwi+zPOznC4F7nb3z8XY1lJgB3BHQVuXA5Pd/ZIY23oWONHdDxYcbwRWxRkQI/QltUXRSQmztrpHpLlsrgTaydyi10rI4ucl0WQuSAGY2QLgQg7PclodczuNwBX0zqjaANwLfN3di62fKretPwBvcvf1BcePAX4S9xqOlBdFZ3JnhgwvetXnJanJZJDKqWTGXdzMbBHw7wQJIflpv/OAqxLYIibNRdFZ3Zkhq4te9XlJajKXOJGXcfcGYHd4bDzpZ9zFmhbu7veZ2XH0pNbnRogrckkbMUtzUfRsd/98/oHwy+/zZvYXMbc1uvALL2zvUTMbHXNbWV30qs9LUpO5IEXKGXf9OJ3giz427n4IeDTO9+ynrSv6OfeemJvL6s4MnwVWmlnRRa8xt7UYuNXMii16XRxzW/q8JDWZm+5LM+MufM++0sKfibOdLCux0v/muKdr09qZIWwrc4teCz6vXDmQFob4ThphW6l+XlJaFoNUmhl3VZMWnlVpprsnRZlpQ0tan5dEk8UglWbGXdWkhWdV3OnueZlp+aO2NDLTNhL8v5iJzLS00t2z+nlJdJkLUmlKOy08q1JOd+8rM20xcI4y0yK1VQ01nhYzhD8via6mglTcGXdpp4VnVcrp7lmt8fQscLq77y44Ph5ojjkFPZM1ntL8vCS6LGb39SfWjLsKpIVnVZrp7spMG7ys1nhK8/OSiDI5klLGnfRFmYSxtFOpGk+ZyiSUaDIXpJRxJ+VSJuGA21KNJ0lcFoOUMu6kLMokHFB7mds4N83PS6LL4j2pQ8B0YH3B8aPCc1LDSmQSTu3jXLnuJshMO7tIZtp3Ce4XxeV2+s5M+yYQZyZhsXT3s4F/tKAAZxob515tZufHmUlIup+XRJTFkZQy7qRPyiSMpa2sbpyb2ucl0WVuJKWMOylBmYSDl9WNc9P8vCSizI2kRKpFVjMJzexy4HqC6b7D0t3d/fYY28psJqFEoyAlUgFDPZMwixvnSnVSkBKpgKGcSZjXZuY2zk0rk1CiU5ASSUiG9yTM5Ma5ae5JKNEpSIkkJMOZhFndODe1TEKJrq7SHRDJsFwm4fqCPy8AD8fc1nozuzacggOC6bhwB5a4M9P6LOkODOWS7u1mdkaR40lkEkpEmUtBF6kW7n5FP+feE3Nz7ybITHvEzAozCd8Vc1tZ3Th3MXCrmRXLJFwcc1sSkab7RDIuiUzCLG6cm9eeMgmriIKUSMbFnUlYCVnMJJRoFKREMiDlTMJMbpybZiahRKcgJZIBKWcSZrKke5qZhBKdEidEsiHNPQlnu/vn8w+EwepmM3t/zG31mUloZkM5k1AiUpASyYCUMwmzunFumpmEEpGm+0RkQLK6cW7YVqqZhFKagpSIxGaob5wL6WUSSjQKUiISm6G8cW6amYQSnYKUiAxIhjfOTS2TUKJTkBKRAcnwxrnP9bWJrJmtdfd5cbUl0Sm7T0QGKs1096xmEkpEGkmJSNXKciahRKMgJSJDUhYyCaU01ZMSkaHqxjjfzMzGm9nNZvaMmW0P/zwTHpsQZ1sSne5JiUjVKpFJOLWPc+W6myCT8OwimYTfJdh5QlKm6T4RqVpZzSSU6DSSEpFqltVMQolIIykREdLPJJRoFKREREpQJmHlKEiJiJQQ956EEp3uSYmIkHomoUSkICUiEphKP5mE6XdHQEFKRCQnzUxCiUj3pEREpGppWyQREalaClIiIlK1FKSkZpnZNDNbambPm9lqM1tuZsdVul8i0kNBSmqSmRnwP8DD7j7X3RcAf49SjUWqirL7pFadDRx099tyB4pldYlIZWkkJbXqlcBjle6EiPRPQUpERKqWgpTUqlXAaZXuhIj0T0FKatXPgOFm9oHcATM73czOqmCfRKSAdpyQmmVm04EvE4yo2oEXgGvc/blK9ktEeihIiYhI1dJ0n4iIVC0FKRERqVoKUiIiUrUUpEREpGopSImISNVSkBIRkaqlICUiIlVLQUpERKrW/wc3vemslNkXSQAAAABJRU5ErkJggg==
 "
 >
 </div>
@@ -14823,7 +14830,7 @@ Accuracy: 0.6666666666666666
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">full</span><span class="o">.</span><span class="n">diagnosis</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -14839,7 +14846,7 @@ Accuracy: 0.6666666666666666
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[55]:</div>
+    <div class="prompt output_prompt">Out[31]:</div>
 
 
 
@@ -14848,17 +14855,17 @@ Accuracy: 0.6666666666666666
 <pre>None                     72
 295.3                    41
 295.6                    12
-295.9                     5
 295.7                     5
+295.9                     5
 295.1                     3
-295.70 bipolar type       1
 296.26                    1
-295.2                     1
-311                       1
-295.70 depressed type     1
 296.4                     1
-295.92                    1
 290.3                     1
+295.92                    1
+311                       1
+295.70 bipolar type       1
+295.70 depressed type     1
+295.2                     1
 Name: diagnosis, dtype: int64</pre>
 </div>
 
@@ -14878,7 +14885,7 @@ Name: diagnosis, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># creating a new variable for subtype</span>
@@ -14910,7 +14917,7 @@ Name: diagnosis, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -14942,7 +14949,7 @@ Name: diagnosis, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -15021,7 +15028,7 @@ Naive Bayes 0.41458892958892957
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Validation</span>
@@ -15042,7 +15049,7 @@ Naive Bayes 0.41458892958892957
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[59]:</div>
+    <div class="prompt output_prompt">Out[35]:</div>
 
 
 
@@ -15059,7 +15066,7 @@ Naive Bayes 0.41458892958892957
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -15105,7 +15112,7 @@ Naive Bayes 0.41458892958892957
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
+<img src="data:image/png;base64,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
 "
 >
 </div>
